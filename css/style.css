@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 35px 20px ;
+    /* 1fr 1fr 1fr 1fr 1fr */
+    /* display: flex;
+    flex-wrap: wrap; */
+    
+}
+.products >div:hover{
+transform: scale(1.1) rotate(12deg);
+color: red;
+/* transition-property: transform ;
+transition-duration: 2s;
+transition-delay: 0s;
+transition-timing-function: ease-in-out;  это cложная форма нижней строки*/
+transition: all 0.5s 0s ease-in-out ;
+}
+.products > div {
+    text-decoration: none;
+    color: #1e796a;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    border: 3px solid #1e796a; 
+    border-radius: 20px;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+.products h3{
+   text-align: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+
+}
+.search input{
+    border: 1px solid #1e796a; 
+    background-color: white;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 16px;
+    padding: 5px 15px;
+    outline: none;   
+}
+
+.search button{
+    border: 1px solid #1e796a; 
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-color: #1e796a;
+    padding: 5px;
+}
+

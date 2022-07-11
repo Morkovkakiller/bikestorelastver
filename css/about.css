@@ -1,0 +1,13 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "d d s"
+    ;
+}
+.sidebar{
+    grid-area: s;
+}
+.discription{
+    grid-area: d;
+}
