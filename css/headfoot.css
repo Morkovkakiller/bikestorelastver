@@ -11,25 +11,28 @@ body{
     align-items: center;
     width: 100% ;
 }
-.nav-icons > ul{
+.nav-icons{
     display: flex;
     justify-content: space-between; 
 }
-.nav-icons > ul > li{
+.nav-icons__child {
     padding-right: 10px;
 }
-.nav-icons > ul > li:last-child{
+.nav-icons__child:last-child{
     padding-right: 0px;
 
 }
-.links> ul{
+.links{
     display: flex;
     justify-content: space-between;
 }
-.links > ul > li{
+.links__li {
     padding-right: 10px;
 }
-.links > ul >li:last-child{
+.links__li:hover{
+    transform: scale(1.3);
+}
+.links__li:last-child {
     padding-right: 0px;
 }
 header{
@@ -40,16 +43,16 @@ header{
 .logo{
     width: 170px;
 }
-.navigation ul{
+.nav-icons{
     list-style: none;
 }
-.links ul{
+.links {
     list-style: none;
 }
-.nav-icons li:hover{
+.nav-icons__child:hover{
 transform: scale(1.2);
 }
-.nav-icons a:hover{
+.nav-icons__icon-text:hover{
     color: red;
     }
 
@@ -72,4 +75,10 @@ a{
 }
 footer span{
     color: rgb(5, 94, 86);
+}
+@media screen and (max-width: 640px) {
+
+    .main-header{
+        flex-direction: column;
+    }
 }

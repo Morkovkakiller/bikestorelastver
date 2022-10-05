@@ -11,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
     <header>
@@ -20,47 +22,40 @@
                     <img title="На главную" src="images/bicycle.png" height="50" width="50">
                 </a>
             </div>
-            <div class="navigation">
-                <nav>
-                    <div class="nav-icons" >
-                    <ul>
-                        <li>
-                            <a href="index.html">main</a>
-                        </li>
-                        <li>
-                            <a href="about.html">about</a>
-                        </li>
-                        <li>
-                            <a href="feedback.html">feedback</a>
-                        </li>
-                    </ul>
-                    </div>
-                </nav>
-                
-            </div>
-            <div class="links">
-                <ul>
-                    <li>
-                        <a href="https://vk.com">
-                            <img title="Мы Вконтакте" alt="Вк" src="images/vkp.png" height="50" width="50">
-                        </a>
+            <nav class="navigation">
+                <ul class="nav-icons">
+                    <li class="nav-icons__child">
+                        <a class="nav-icons__icontext" href="index.html">main</a>
                     </li>
-                    <li>
-                        <a href="https://web.telegram.org">
-                            <img title="Мы в Телеграм" alt="Телеграм" src="images/tg.png" height="50" width="50">
-                        </a>
+                    <li class="nav-icons__child">
+                        <a class="nav-icons__icontext" href="about.html">about</a>
                     </li>
-                    <li>
-                        <a href="https://www.youtube.com/">
-                            <img title="Мы в Ютуб" alt="Ютуб" src="images/youtubep.png" height="50" width="50">
-                        </a>
+                    <li class="nav-icons__child">
+                        <a class="nav-icons__icon-text" href="feedback.html">feedback</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
+            <ul class="links">
+                <li class="links__li">
+                    <a href="https://vk.com">
+                        <img title="Мы Вконтакте" alt="Вк" src="images/vkp.png" height="50" width="50" class="vkLogo">
+                    </a>
+                </li>
+                <li class="links__li">
+                    <a href="https://web.telegram.org">
+                        <img title="Мы в Телеграм" alt="Телеграм" src="images/tg.png" height="50" width="50" class="tgLogo">
+                    </a>
+                </li>
+                <li class="links__li">
+                    <a href="https://www.youtube.com/">
+                        <img title="Мы в Ютуб" alt="Ютуб" src="images/youtubep.png" height="50" width="50" class="ytLogo">
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="search">
             <input type="search" placeholder="Найти">  
-            <button>
+            <button class="search-button">
                 <img alt="Поиск" src="images/lupa.png" height="20">
             </button>
         </div>
@@ -69,106 +64,13 @@
         <h1 style="display: none;">Bike Store</h1>
         <h2 class="header-text">Catalog</h2>
         <div class="products">
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>3500</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>4500</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>5500</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>6500</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>7500</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>8500</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>9500</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>3100</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>3200</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>3300</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>3400</p>
-            </div>
-            <div>
-                <img  alt="Горный велосипед" src="images/mount.jpg" height="200" >
-                <h3>
-                    Горный
-                    Велосипед
-                </h3>
-                <p>3500</p>
-            </div>
         </div> 
     </main>
     <footer>
         <p>&copy; Bike <span>Store</span></p>
     </footer>
+    <script src="scripts/scripts.js">
+
+    </script>
 </body>
 </html>

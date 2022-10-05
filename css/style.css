@@ -67,4 +67,38 @@ transition: all 0.5s 0s ease-in-out ;
     background-color: #1e796a;
     padding: 5px;
 }
+@media screen and (max-width: 1880px){
+    .products{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (max-width: 1500px){
+    .products{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 1130px){
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 750px){
+    .products{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 380px){
+    .products > div> img{
+        height: 150px;
+    }
+}
+.active{
+    background-color: aqua !important;
+    transform: scale(1.3); !important;
+}
+.logoActive{
+    background-color: aqua !important;
+    transform: scale(1.3); !important;
+}
+
 
